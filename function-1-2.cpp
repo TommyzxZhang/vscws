@@ -11,9 +11,8 @@ void print_class(std::string courses[4], std::string students[], int report_card
         for (int j = 0; j < 4; j++){
             cout << report_card[i][j] << "\t";
         }
-        if (i<2){
-            cout << endl;
-        }
+        cout << endl;
+
         
     }
     
