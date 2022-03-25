@@ -1,21 +1,37 @@
-#include <math.h>
+int maximum_sum(int *nums, int length) {
+	if (length<1){
+		return 1;
+	}
+	int count = 0;
+	for (int i = 0; i < length; i++){
+		if (*(nums + i) < 0) {
+			count++;
+			if (count==length){
+				return false;
+			}
+		}
+	}
+	int sum = 0;
+	int maximum = 0;
+	for (int i = 0; i < length-1; i++){
+		for (int j = 0; j < i; j++){ 
+			sum = 0;
+			for (int k = 0; k < length-1; k++){
+				if (j+k>length-1){
+					continue;
+				}
+				else{
+					sum += *(nums + j+k);
+					if (maximum < sum) {
+						maximum = sum;
+					}
+					else {
+						continue;
+					}
+				}
+			}
 
-
-int binary_to_number(int binary_digits[], int number_of_digits) {
-    int num = 0;
-    for (int i = 0; i < number_of_digits; i++)
-    {
-        num = num * 10 + binary_digits[i];
-    }
-
-    int decimalNumber = 0, i = 0, remainder;
-    while (num != 0)
-    {
-        remainder = num % 10;
-        num /= 10;
-        decimalNumber += remainder * pow(2, i);
-        ++i;
-    }
-    return decimalNumber;
-
+		}
+	}
+	return maximum;
 }

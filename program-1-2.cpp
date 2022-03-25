@@ -9,15 +9,13 @@ int main()
 	/* address of a[0] is assigned to ptr */
 	ptr = &a[0];   
 
-	// I want to copy the values in a into b; since i've declared b
-    // as a dynamically allocated array,
-	// I can now do pointer magic!!
+
 	b = ptr;
-
-	cout << "Value of first element in b " << b[0] << endl; 
-	cout << "Value of second element in b " << b[1] << endl; 
-
-	b[1] = 42;
+	//This step only make the address of b point to address of a, it is not relleay copy.
+	cout << "Value of first element in b " << b[0] << endl;
+	cout << "Value of second element in b " << b[1] << endl;
+	//All steps of cout didn't use pointer to access the adress, which is not pointer magic.
+	a[1] = 42;
 	cout << "Value of second element in b " << b[1] << endl;
 
 	return 0;
