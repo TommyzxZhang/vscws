@@ -9,7 +9,7 @@ int maximum_sum(int *nums, int length) {
 		}
 	}
 	if (length<1){
-		return 1;
+		return 0;
 	}
 	int sum = 0;
 	int maximum = 0;
