@@ -3,7 +3,7 @@ int maximum_sum(int *nums, int length) {
 	for (int i = 0; i < length; i++){
 		if (*(nums + i) < 0) {
 			count++;
-			if (count==length-1){
+			if (count==length){
 				return false;
 			}
 		}
