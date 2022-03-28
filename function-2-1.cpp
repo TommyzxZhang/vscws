@@ -22,7 +22,7 @@ void hexDigits(int* numbers, int length) {
 		case 7:
 		case 8:
 		case 9:
-			cout <<i<<" " << *(numbers + i) << " " << *(numbers + i) << " " << endl;
+			cout <<i<<" " << *(numbers + i) << " " << *(numbers + i)<< endl;
 			break;
 		case 10:
 			cout << i <<" " << *(numbers + i) << " A " << endl;
