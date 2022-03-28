@@ -1,16 +1,19 @@
 int maximum_sum(int *nums, int length) {
 	int count = 0;
-	for (int i = 0; i < length; i++){
+	for (int i = 0; i < length; i++) {
 		if (*(nums + i) < 0) {
 			count++;
-			if (count==length){
+			if (count == length) {
 				return false;
 			}
 		}
 	}
+
 	if (length<1){
 		return 0;
 	}
+
+
 	int sum = 0;
 	int maximum = 0;
 	for (int i = 0; i < length-1; i++){
