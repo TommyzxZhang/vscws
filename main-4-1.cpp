@@ -1,13 +1,19 @@
-#include <iostream>
+#include<string>
+#include<iostream>
+#include "function-4-1.h"
+
 using namespace std;
-extern int* readNumbers();
-extern int secondSmallestSum(int* numbers, int length);
 
 int main() {
-	int length = 4;
-	int* numbers = readNumbers();
-	int numbers2 = secondSmallestSum(numbers, length);
-
-	cout <<numbers2 << endl;
-	delete[] numbers, numbers2;
+    RoomCounter* r = new RoomCounter(3); // set up room with capacity of 3 people
+    // add some people
+    for (int i = 0; i < 4; i++) {
+        cout << "num people: " << r->get_count() << endl;
+        r->enter();
+    }
+    // exit some people 
+    for (int i = 0; i < 4; i++) {
+        cout << "num people: " << r->get_count() << endl;
+        r->exit();
+    }
 }
