@@ -1,9 +1,9 @@
-extern int* readNumbers();
-extern void printNumbers(int* numbers, int length);
+#include <iostream>
+extern int* shift_right(int* vals, int len, int amount);
 
 int main() {
-	int length = 10;
-	int *arr = readNumbers();
-	printNumbers(arr, length);
-	delete[] arr;
+	int vals[] = { 1,2,3,4,5 };
+	int *sv;
+	sv = shift_right(vals, 5, 2);
+	delete[] sv, vals;
 }
