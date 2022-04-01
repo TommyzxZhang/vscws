@@ -1,22 +1,11 @@
-#include <iostream>
-using namespace std;
-int* readNumbers() {
-	int* arr = new int[5];
-	for (int i = 0; i < 5; i++) {
-		cin >> arr[i];
+int* count_numbers_in_range(int vals[], int length, int bottom, int top) {
+	int* arr = new int[length];
+	int k = 0;
+	for (int i = 0; i < length; i++){
+		if (bottom <= vals[i] && vals[i] <= top) {
+			arr[k] = vals[i];
+			k++;
+		}
 	}
 	return arr;
-}
-bool equalsArray(int* numbers1, int* numbers2, int length) {
-	bool flag = true;
-	for (int i = 0; i < length; i++) {
-		if (*(numbers1+i)== *(numbers2 + i)){
-			continue;
-		}
-		else{
-			flag = false; 
-			break;
-		}
-	}
-	return flag;
 }

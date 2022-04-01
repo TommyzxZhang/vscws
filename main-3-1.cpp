@@ -1,12 +1,11 @@
 #include <iostream>
 using namespace std;
-extern int* readNumbers();
-extern bool equalsArray(int* numbers1, int* numbers2, int length);
+
+extern int* count_numbers_in_range(int vals[], int length, int bottom, int top);
 
 int main() {
-	int length = 5;
-	int* numbers1 = readNumbers();
-	int* numbers2 = readNumbers();
-	std::cout<<equalsArray(numbers1,numbers2, length)<<endl;
-	delete[] numbers1, numbers2;
+	int vals[] = { 1,7,3,4,6,5,2 };
+	int *res = count_numbers_in_range(vals, 7, 3, 6);
+	int vals[] = { 1,4,5,6,8,2,9,4,2,5,6,1 };
+	int* res = count_numbers_in_range(vals, 12, 3, 6);
 }
