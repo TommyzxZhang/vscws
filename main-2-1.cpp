@@ -1,9 +1,16 @@
-extern int* readNumbers();
-extern void hexDigits(int* numbers, int length);
+#include <iostream>
+using namespace std;
+extern int lookup_speeding_fine(int over);
+
+
 
 int main() {
-	int length = 10;
-	int* arr = readNumbers();
-	hexDigits(arr, length);
-	delete[] arr;
+	int over = 0;
+	cout << "my speeding fine is: " << lookup_speeding_fine(over) << endl;
+	over = 10;
+	cout << "my speeding fine is: " << lookup_speeding_fine(over) << endl;
+	over = 21;
+	cout << "my speeding fine is: " << lookup_speeding_fine(over) << endl;
+	over = 50;
+	cout << "my speeding fine is: " << lookup_speeding_fine(over) << endl;
 }
