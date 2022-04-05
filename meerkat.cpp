@@ -1,6 +1,8 @@
 #include "meerkat.h"
 
+meerkat::meerkat() {
 
+}
 
 void meerkat::setname(string meerName) {
 	name = meerName;
