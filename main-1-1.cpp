@@ -1,9 +1,12 @@
-extern int* readNumbers();
-extern void printNumbers(int* numbers, int length);
+#include<string>
+#include<iostream>
+#include "meerkat.h"
+using namespace std;
 
 int main() {
-	int length = 10;
-	int *arr = readNumbers();
-	printNumbers(arr, length);
-	delete[] arr;
+	meerkat f;
+	f.setname("fuck");
+	f.setAge(13);
 }
+
+
