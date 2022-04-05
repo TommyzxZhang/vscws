@@ -4,7 +4,7 @@ meerkat::meerkat() {
 
 }
 
-void meerkat::setname(string meerName) {
+void meerkat::setName(string meerName) {
 	name = meerName;
 }
 void meerkat::setAge(int meerAge) {

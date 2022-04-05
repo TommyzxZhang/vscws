@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 	meerkat f;
-	f.setname("fuck");
+	f.setName("fuck");
 	f.setAge(13);
 }
 

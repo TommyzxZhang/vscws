@@ -10,7 +10,7 @@ public:
 string name;
 int age;
 meerkat();
-void setname(string meerName);
+void setName(string meerName);
 void setAge(int meerAge);
 string getName();
 int getAge();
