@@ -2,7 +2,7 @@
 #define CART_H
 #include <string>
 #include <iostream>
-//#include "meerkat.h"
+#include "meerkat.h"
 #pragma once
 using namespace std;
 

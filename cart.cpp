@@ -26,8 +26,8 @@ bool cart::addMeerkat(meerkat cat) {
 void cart::emptyCart() {
 	CURRENT_CAPACITY = 0;
 }               // remove all meerkats from the cart
-void printMeerkats() {
+void cart::printMeerkats() {
 	for (int i = 0; i < 4; i++){
-		cout <<K[i].getName() << " " <<K[i].getAge << endl;
+		cout <<K[i].getName() << " " << K[i].getAge() << endl;
 	}
 }
