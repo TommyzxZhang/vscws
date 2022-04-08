@@ -1,6 +1,8 @@
+#include "meerkat.h"
 #include "cart.h"
-#include "cart.cpp"
 #pragma once
+
+using namespace std;
 
 int main() {
 	meerkat a;
