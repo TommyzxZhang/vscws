@@ -1,7 +1,7 @@
 #include "aircraft.h"
-#include "person.h"
+//#include "person.h"
 #include "string"
-#pragma once
+
 
 using namespace std;
 

@@ -1,4 +1,4 @@
-//#include "person.h"
+#include "person.h"
 #include "aircraft.h"
 #pragma once
 
