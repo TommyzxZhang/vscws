@@ -1,6 +1,8 @@
-
-
 #include "person.h"
+
+person::person() {
+
+}
 
 person::person(string myName, int Salary) {
 	name = myName;

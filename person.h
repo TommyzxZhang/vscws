@@ -7,6 +7,7 @@ using namespace std;
 
 class person {
 public:
+	person();
 	person(string myName, int Salary);
 	string name;
 	int sala;
