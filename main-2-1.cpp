@@ -1,9 +1,9 @@
-extern int* readNumbers();
-extern void hexDigits(int* numbers, int length);
+#include "cart.h"
+#include "cart.cpp"
+#pragma once
 
 int main() {
-	int length = 10;
-	int* arr = readNumbers();
-	hexDigits(arr, length);
-	delete[] arr;
+	meerkat a;
+	cart fuck;
+	fuck.addMeerkat(a);
 }
