@@ -11,7 +11,7 @@ public:
 	int count;
 	
 	int MAX_CAPACITY;
-	int CURRENT_CAPACITY;
+
 	cart();
 	meerkat K[4];					// create an empty cart object
 	bool addMeerkat(meerkat cat);   // adds a meerkat to the cart, returns false if full
