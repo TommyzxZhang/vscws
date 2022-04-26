@@ -1,12 +1,7 @@
-#include<string>
-#include<iostream>
-#include "meerkat.h"
-using namespace std;
+#include "Musician.h"
 
 int main() {
-	meerkat f;
-	f.setName("fuck");
-	f.setAge(13);
+	Musician fuckkk("Van", 114514);
+	std::cout<<fuckkk.get_experience()<<std::endl;
+	std::cout << fuckkk.get_instrument() << std::endl;
 }
-
-
