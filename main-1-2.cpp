@@ -1,16 +1,17 @@
-#include "Musician.h"
-#include "Orchestra.h"
+#include "Store.h"
+using namespace std;
+
 int main() {
-	Musician fuckkk("Van", 114514);
-	Musician fuck1("", 114514);
-	Musician fuck2("", 114514);
-	Musician fuck3("", 114514);
-	Orchestra fuck(3);
-	fuck.add_musician(fuck1);
-	fuck.add_musician(fuck2);
-	fuck.add_musician(fuckkk);
-	fuck.get_current_number_of_members();
-	std::cout<<fuck.has_instrument("Van")<<std::endl;
-	fuck.add_musician(fuck3);
-	
+	Stock_item fuc("fuck", 1);
+	Stock_item fuck("fuck", 1);
+	Stock_item fuckk("fuck", 1);
+	Stock_item fuckkk("fuck", 1);
+	Store fuuck(3);
+	cout<<fuuck.add_stock(fuc)<<endl;
+	cout << fuuck.add_stock(fuck) << endl;
+	cout << fuuck.add_stock(fuckk) << endl;
+	cout << fuuck.add_stock(fuckkk) << endl;
+	cout << fuuck.get_total_stock_count() << endl;
+	cout << fuuck.get_stock_quantity(1) << endl;
+
 }
