@@ -1,7 +1,8 @@
-#include "Musician.h"
+#include "Stock_item.h"
+using namespace std;
 
 int main() {
-	Musician fuckkk("Van", 114514);
-	std::cout<<fuckkk.get_experience()<<std::endl;
-	std::cout << fuckkk.get_instrument() << std::endl;
+	Stock_item fuck("fuck", 1);
+	cout << fuck.get_description() << endl;
+	cout << fuck.get_item_number() << endl;
 }
