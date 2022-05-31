@@ -6,6 +6,7 @@ using namespace std;
 
 class hunter:public animal{
 public:
+    string get_name();
     int get_kills();
     void set_kills(int k);
     hunter(string n, int v);  // create a hunter with name n and body volume v
