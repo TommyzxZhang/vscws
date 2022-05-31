@@ -16,7 +16,10 @@ public:
     int volume;               // the volume of the animal's body
 
     int get_animalID();
-    void set_animalID(int id);
+
+    string get_name();
+    void set_name(string n);
+
     int get_volume();
     void set_volume(int v);
     //virtual void get_name() = 0;

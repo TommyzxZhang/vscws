@@ -18,5 +18,5 @@ void vegie::set_favo(string fav) {
 }
 
 void vegie::get_name() {
-	printf("Safe:%s \n", name);
+	
 }

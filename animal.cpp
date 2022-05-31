@@ -9,6 +9,13 @@ animal::animal(string n, int v){
     IDcount++;
 }
 
+string animal::get_name() {
+    return name;
+}
+void animal::set_name(string n) {
+    name = n;
+}
+
 int animal::get_animalID() {
     return animalID;
 }
