@@ -17,6 +17,6 @@ void vegie::set_favo(string fav) {
 	favourite_food = fav;
 }
 
-void vegie::get_name() {
-	
+string vegie::get_name() {
+	return name;
 }
