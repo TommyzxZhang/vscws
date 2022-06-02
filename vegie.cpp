@@ -9,7 +9,7 @@ vegie::vegie(string n, int v) {
 	nextID++;
 }
 
-string vegie::get_favo() {
+string vegie::get_favourite_food() {
 	return favourite_food;
 }
 
@@ -18,5 +18,7 @@ void vegie::set_favo(string fav) {
 }
 
 string vegie::get_name() {
+	string vegie("Safe:");
+	name.insert(0, vegie);
 	return name;
 }

@@ -18,6 +18,6 @@ void hunter::set_kills(int k) {
 
 string hunter::get_name() {
 	string hunter("Hunter:");
-	name.insert(0, hunter);
+	name = hunter + name;
 	return name;
 }
