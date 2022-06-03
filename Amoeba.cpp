@@ -8,3 +8,9 @@ Amoeba::Amoeba(string a) {
 	storeID = amoebaBranch;
 	amoebaBranch++;
 }
+int Amoeba::get_storeID() {
+	return storeID;
+}
+int Amoeba::get_amoebaBranch() {
+	return amoebaBranch;
+}

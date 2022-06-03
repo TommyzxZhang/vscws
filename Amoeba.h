@@ -12,8 +12,13 @@ public:
                              // and sales=0;
     int storeID;             // unique id for the store
     int get_storeID();
-    void set_storeID();
     int get_amoebaBranch();
+    int get_excessSales() {
+        if (sales <= 100) {
+            return 0;
+        }
+        return sales;
+    }
 private:
     static int amoebaBranch;
 };

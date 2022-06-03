@@ -14,7 +14,7 @@ public:
 	int sales;        // number of records that have been sold. Takes only non-negative values
 	void set_address(string a);
 	string get_address();
-	int get_excessSales();  // return the number of record sales above a given store target
+	virtual int get_excessSales();  // return the number of record sales above a given store target
 	int get_sales();
 	void set_sales(int s);
 	void set_name(string n);
