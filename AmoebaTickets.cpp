@@ -6,5 +6,5 @@ void AmoebaTickets::sellTicket() {
     ticktsSold++;
 }  
 int AmoebaTickets::get_ticketsSold() {
-    return sales;
+    return ticktsSold;
 } 
