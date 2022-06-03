@@ -14,7 +14,7 @@ public:
     int get_storeID();
     int get_amoebaBranch();
     int get_excessSales() {
-        if (sales <= 100) {
+        if (sales <= 1000) {
             return 0;
         }
         return sales;
