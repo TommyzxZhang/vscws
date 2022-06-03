@@ -3,7 +3,7 @@
 // just use the corresponding base class constructor
 
 void AmoebaTickets::sellTicket() {
-    sales++;
+    ticktsSold++;
 }  
 int AmoebaTickets::get_ticketsSold() {
     return sales;

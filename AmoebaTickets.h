@@ -11,8 +11,9 @@ public:
     AmoebaTickets(string n) {
         this->name = n;
         this->address = "";
-        this->sales = 0;
+        this->ticktsSold = 0;
     };  // creates the record store with name n 
+    int ticktsSold = 0;
                                   // also call the parent class constructor
                                   // with an empty address string.
 
