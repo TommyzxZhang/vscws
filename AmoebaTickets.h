@@ -7,8 +7,11 @@ using namespace std;
 
 class AmoebaTickets :public Amoeba {
 public:
-    AmoebaTickets();            // just use the corresponding base class constructor
-    AmoebaTickets(string n);  // creates the record store with name n 
+    AmoebaTickets() :Amoeba() {};            // just use the corresponding base class constructor
+    AmoebaTickets(string n) :Amoeba(false) {
+        name = n;
+        address = "";
+    };  // creates the record store with name n 
                                   // also call the parent class constructor
                                   // with an empty address string.
     void ticketsSold();          // and number of tickets sold so far should be initialised to zero
