@@ -7,7 +7,12 @@ RecordStore::RecordStore() {
 RecordStore::RecordStore(string n, string a, int s) {
 	name = n;
 	address = a;
-	sales = s;
+	if (s >= 0){
+		sales = s;
+	}
+	else{
+		sales = 0;
+	}
 }
 
 void RecordStore::set_address(string a) {
@@ -20,7 +25,12 @@ int RecordStore::get_sales() {
 	return sales;
 }
 void RecordStore::set_sales(int s) {
-	sales = s;
+	if (s >= 0) {
+		sales = s;
+	}
+	else {
+		sales = 0;
+	}
 }
 void RecordStore::set_name(string n) {
 	name = n;
