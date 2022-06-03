@@ -16,8 +16,8 @@ public:
 	string get_address();
 	int get_excessSales();  // return the number of record sales above a given store target
 	int get_sales();
-	void set_sales();
-	void set_name();
+	void set_sales(int s);
+	void set_name(string n);
 	string get_name();
 };
 #endif
