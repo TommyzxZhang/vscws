@@ -7,6 +7,7 @@ using namespace std;
 
 class Amoeba:public RecordStore{
 public:
+    Amoeba();
     Amoeba(string a);         // creates address with a
                              // calls the parent class constructor with name=="Amoeba",address==a, 
                              // and sales=0;
