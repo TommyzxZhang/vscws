@@ -3,7 +3,7 @@
 // just use the corresponding base class constructor
 AmoebaTickets::AmoebaTickets(string n) {
     name = n;
-    Amoeba a(n);
+    Amoeba(n);
     address = "";
 }
 void AmoebaTickets::ticketsSold() {
