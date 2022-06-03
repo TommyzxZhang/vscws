@@ -1,11 +1,5 @@
-#include "meerkat.h"
-#include "cart.h"
-#pragma once
-
-using namespace std;
+#include "Amoeba.h"
 
 int main() {
-	meerkat a;
-	cart fuck;
-	fuck.addMeerkat(a);
+	return 0;
 }
