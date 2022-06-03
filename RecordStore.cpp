@@ -19,7 +19,7 @@ void RecordStore::set_sales(int s) {
 	sales = s;
 }
 void RecordStore::set_name(string n) {
-	name = n
+	name = n;
 }
 string RecordStore::get_name() {
 	return name;
